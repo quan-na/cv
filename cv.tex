@@ -6,8 +6,9 @@
 \usepackage{xunicode,xltxtra,url,parskip} 	%other packages for formatting
 \RequirePackage{color,graphicx}
 \usepackage[usenames,dvipsnames]{xcolor}
-\usepackage[big]{layaureo} 				%better formatting of the A4 page
+%\usepackage[big]{layaureo} 				%better formatting of the A4 page
 % an alternative to Layaureo can be ** \usepackage{fullpage} **
+\usepackage{fullpage}
 \usepackage{supertabular} 				%for Grades
 \usepackage{titlesec}					%custom \section
 \usepackage{todonotes}
@@ -23,14 +24,18 @@
 %\setmainfont[SmallCapsFont = Fontin SmallCaps]{Fontin}
 %%% modified for Karol Kozioł for ShareLaTeX use
 \setmainfont[
-SmallCapsFont = Fontin-SmallCaps.otf,
-BoldFont = Fontin-Bold.otf,
-ItalicFont = Fontin-Italic.otf
+%SmallCapsFont = Fontin-SmallCaps.otf,
+%BoldFont = Fontin-Bold.otf,
+%ItalicFont = Fontin-Italic.otf
+SmallCapsFont = JosefinSans-SemiBold.ttf,
+BoldFont = JosefinSans-Bold.ttf,
+ItalicFont = JosefinSans-Italic.ttf
 ]
-{Fontin.otf}
+%{Fontin.otf}
+{JosefinSans-Regular.ttf}
 %%%
 
-%CV Sections inspired by: 
+%CV Sections inspired by:
 %http://stefano.italians.nl/archives/26
 \titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
 \titlespacing{\section}{0pt}{3pt}{3pt}
@@ -54,10 +59,10 @@ ItalicFont = Fontin-Italic.otf
 %WATERMARK TEST [**not part of a CV**]---------------
 %\font\wm=''Baskerville:color=787878'' at 8pt
 %\font\wmweb=''Baskerville:color=FF1493'' at 8pt
-%{\wm 
+%{\wm
 %	\begin{textblock}{1}(0,0)
 %		\rotatebox{-90}{\parbox{500mm}{
-%			Typeset by Alessandro Plasmati with \XeTeX\  \today\ for 
+%			Typeset by Alessandro Plasmati with \XeTeX\  \today\ for
 %			{\wmweb \href{http://www.aleplasmati.comuv.com}{aleplasmati.comuv.com}}
 %		}
 %	}
@@ -148,16 +153,16 @@ An end-to-end enterprise solution primarily to serve on SEA Games 2015. My main 
 \begin{tabular}{rl}
     \textsc{Client:} & \href{http://www.sportsingapore.gov.sg/}{Sport Singapore}\\
     \textsc{Scale:} & \~20 persons in 2 years\\
-    \textsc{Role:} & Background Engineer / Team Leader\\ 
+    \textsc{Role:} & Background Engineer / Team Leader\\
     \textsc{Techs:} & Vert.x, RxJava, Python, Groovy, Spring (-MVC,-Data,-Security\ldots), Hibernate, CAS\ldots\\
 \end{tabular}
-    
+
 
 
 %Section: Education
 \hfill
 \section{Education}
-\begin{tabular}{rl}	
+\begin{tabular}{rl}
     \textsc{July} 2008 & Participated in \textsc{Computer Science} at \textit{HCM International University (National Univerisy)}
 \end{tabular}
 
